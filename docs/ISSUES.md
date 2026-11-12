@@ -14,7 +14,7 @@ Several of these runs finished with exit code 0. A clean exit says the code ran,
 
 ### I-2. A class is carried by one sample site or one study
 - **Symptom.** A classifier separates disease classes with high accuracy.
-- **Root cause.** One class came mostly from a different sample site (three quarters of the cells of one class came from effusions `[D1]`) or from studies that supply no other class. The classifier can learn site, chemistry or study.
+- **Root cause.** One class came mostly from a different sample site (in the small-cell atlas, 74.9% of the held-out cells of one disease class came from a single sample, a pleural effusion `[D1]`) or from studies that supply no other class. The classifier can learn site, chemistry or study.
 - **Detect.** Before training, tabulate class by study, site, assay and donor.
 - **Fix.** Select datasets with the structural rule in `docs/CRITERIA.md`, section 2. Balancing donors does not repair this.
 
@@ -131,10 +131,10 @@ Several of these runs finished with exit code 0. A clean exit says the code ran,
 - A second cohort's ISP cost about 2.5 times its prediction, probably because its null genes were more highly detected, so each call had more token-positive cells `[D3]`. The cause was not tested. Recost on the target cells.
 
 ### I-24. A hyperparameter search that does not fit
-- The search framework ran at about half the rate of the same fine-tune outside it; host and precision were ruled out by measurement and the cause was not found. 4 of 30 registered trials fit under the ceiling `[D4]`. Best of four on five donors is optimistic, and the top two trials differed by 0.00006 in the selection metric.
+- The search framework ran at about 0.4 to 0.5 times the rate of the same fine-tune outside it; host and precision were ruled out by measurement and the cause was not found. 4 of 30 registered trials fit under the ceiling `[D4]`. Best of four on five donors is optimistic, and the top two trials differed by 0.00006 in the selection metric.
 
 ### I-25. The fp32 to bf16 cost ratio is not one number
-- It ranged from about 1.5 to about 5 across arms and batch shapes `[D4]`. Reprice each arm from its own gate run.
+- Across our runs fp32 cost roughly 1.5 to 5 times as much as bf16, depending on the arm and the batch shape. This is a compute lesson from internal run notes across several runs, not a result tied to one dataset. Reprice each arm from its own gate run.
 
 ### I-26. Small units waste the GPU
 - Chunks of same-length sequences gave full batches and several times the rate of many small units (internal record).

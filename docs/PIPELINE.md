@@ -59,7 +59,7 @@ See `templates/preregistration.md`. Controls are drawn before any perturbation o
 | Outputs | A start-check record; a projected GPU-hour figure set against the cap |
 | Checks | Section 3 of `docs/CRITERIA.md` |
 
-Measure rates on the target cells before costing a full run. A calibration of about 0.05 GPU-h replaced our inferred rates and halved the estimate `[D2]`. Fit cost per call as a fixed part plus a per-cell part, per operation; in one study deletion cost was nearly all per-cell and overexpression nearly all fixed `[D2]`. All-gene deletion time rose faster than sequence length: the fitted exponent was 1.44 in a pilot and 1.68 in the screen `[D4]`.
+Measure rates on the target cells before costing a full run. A calibration of about 0.05 GPU-h replaced our inferred rates and halved the estimate `[D2]`. Fit cost per call as a fixed part plus a per-cell part, per operation; in one study deletion cost was nearly all per-cell and overexpression mostly fixed (about 82% fixed at 100 cells) `[D2]`. All-gene deletion time rose faster than sequence length: the fitted exponent was 1.44 in a pilot and 1.68 in the screen `[D4]`.
 
 ## 6. Fine-tune (optional)
 
