@@ -88,7 +88,7 @@ def embedding_collapse_check(embeddings, strata, *, n_draw=200, seed=0, limit=0.
 
 
 def prediction_collapse_check(eval_labels, eval_scores, *, min_auc=0.5, min_sd=1e-3) -> dict:
-    """After the first epoch: a constant predictor has an AUC near 0.5 and almost no spread."""
+    """After every epoch: a constant predictor has an AUC near 0.5 and almost no spread."""
     y = np.asarray(eval_labels).astype(bool)
     s = np.asarray(eval_scores, dtype=np.float64)
     pos, neg = s[y], s[~y]

@@ -67,9 +67,9 @@ Measure rates on the target cells before costing a full run. A calibration of ab
 |---|---|
 | Inputs | Training cells, split table, released weights |
 | Outputs | Best checkpoint and its sha256; per-step loss and gradient norm; per-epoch evaluation metrics; test predictions |
-| Checks | Training-mode memory test. After epoch 1: evaluation AUC above 0.5 and the SD of evaluation predictions above a floor. After the base embedding: embedding-collapse check. Classifier gate on held-out donors |
+| Checks | Training-mode memory test. After every epoch: evaluation AUC above 0.5 and the SD of evaluation predictions above a floor. After the base embedding: embedding-collapse check. Classifier gate on held-out donors |
 
-A recipe that trained for a two-class task on the 316M model: the library's sequence-classification head on the pretrained encoder, AdamW, learning rate 5e-5, linear warm-up then linear decay, 3 epochs, class- or stratum-weighted loss with a stated divisor, gradient clipping at max norm 1.0, a checkpoint with optimizer, scheduler and RNG state after each epoch, and the best epoch chosen on the evaluation set (internal record). Without the clipping line the same recipe collapsed (I-9).
+A recipe we ran for a two-class task on the 316M model: the library's sequence-classification head on the pretrained encoder, AdamW, learning rate 5e-5, linear warm-up then linear decay, 3 epochs, class- or stratum-weighted loss with a stated divisor, gradient clipping at max norm 1.0, a checkpoint with optimizer, scheduler and RNG state after each epoch, and the best epoch chosen on the evaluation set (internal record). We do not recommend it as it stands. Without the clipping line it collapsed in the first epoch. With clipping the first epoch trained and the two later epochs collapsed, so the kept model was a one-epoch fine-tune picked by the evaluation rule (I-9). The cause of the instability is not known.
 
 For the T-cell classifiers on public atlases we used one fixed recipe across cohorts (1 epoch, learning rate 5e-5, batch 8, no search) `[D2, D3]`.
 

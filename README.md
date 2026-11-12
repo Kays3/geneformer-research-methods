@@ -30,7 +30,7 @@ It assumes you already know the Geneformer library and its published protocol (*
 Each statement here rests on one of two kinds of evidence, and the text says which.
 
 - **Public data.** Numbers come only from analyses of public datasets. Each number is given with the dataset accession and the model. The analysis code for these studies is not public, so the numbers are reported results, not reproducible artifacts. None of these analyses is peer reviewed.
-- **Internal record.** Some lessons come from studies of unpublished data. For these we state what happened in words (for example, "a fine-tune collapsed to a constant predictor without gradient clipping") and give no result number, gene, figure or cell count.
+- **Internal record.** Some lessons come from studies of unpublished data. For these we state what happened in words (for example, "a fine-tune collapsed to a constant predictor and the run still exited 0") and give no result number, gene, figure or cell count.
 
 Other limits a reader should keep in mind:
 

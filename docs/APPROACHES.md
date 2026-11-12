@@ -79,7 +79,7 @@ Run the design unchanged on an independent cohort, with the differences listed i
 - A no-op gate as the only numerical check (I-10).
 - bf16 for deletion screens (I-11).
 - A hyperparameter search inside a GPU-hour ceiling sized for something else (I-24).
-- Fine-tuning without gradient clipping and without a check on the predictions (I-9).
+- Fine-tuning without a check on the predictions after every epoch. Gradient clipping did not make the recipe stable (I-9).
 - Reproducing the protocol's classifier score on its own atlas with our pipeline (I-5). We do not know whether the gap is ours.
 - Adopting a merged criteria set: the comparison that should have justified it was not completed on its own terms.
 
