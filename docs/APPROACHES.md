@@ -1,5 +1,9 @@
 # Approaches: what worked, what did not, when to use which
 
+![Released versus fine-tuned comparison design](../figures/03-comparison-design.svg)
+
+[Figure sources and regeneration](../figures/README.md).
+
 Tags `[D1]` to `[D4]` point to `docs/DATASETS.md`. "Internal record" marks a lesson from unpublished data.
 
 ## 1. Zero-shot or fine-tuned

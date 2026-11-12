@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="686.88pt" height="372.096pt" viewBox="0 0 686.88 372.096" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 372.096 
+L 686.88 372.096 
+L 686.88 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 32.076 202.68 
+L 163.764 202.68 
+Q 170.46 202.68 170.46 196.0272 
+L 170.46 117.8568 
+Q 170.46 111.204 163.764 111.204 
+L 32.076 111.204 
+Q 25.38 111.204 25.38 117.8568 
+L 25.38 196.0272 
+Q 25.38 202.68 32.076 202.68 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 193.896 202.68 
+L 325.584 202.68 
+Q 332.28 202.68 332.28 196.0272 
+L 332.28 117.8568 
+Q 332.28 111.204 325.584 111.204 
+L 193.896 111.204 
+Q 187.2 111.204 187.2 117.8568 
+L 187.2 196.0272 
+Q 187.2 202.68 193.896 202.68 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 355.716 202.68 
+L 487.404 202.68 
+Q 494.1 202.68 494.1 196.0272 
+L 494.1 117.8568 
+Q 494.1 111.204 487.404 111.204 
+L 355.716 111.204 
+Q 349.02 111.204 349.02 117.8568 
+L 349.02 196.0272 
+Q 349.02 202.68 355.716 202.68 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 517.536 202.68 
+L 649.224 202.68 
+Q 655.92 202.68 655.92 196.0272 
+L 655.92 117.8568 
+Q 655.92 111.204 649.224 111.204 
+L 517.536 111.204 
+Q 510.84 111.204 510.84 117.8568 
+L 510.84 196.0272 
+Q 510.84 202.68 517.536 202.68 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #fff2e6; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 172.458501 157.2192 
+Q 178.830528 157.2192 183.637308 157.2192 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 178.437308 154.6192 
+L 183.637308 157.2192 
+L 178.437308 159.8192 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 334.278501 157.2192 
+Q 340.650528 157.2192 345.457308 157.2192 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 340.257308 154.6192 
+L 345.457308 157.2192 
+L 340.257308 159.8192 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 496.098501 157.2192 
+Q 502.470528 157.2192 507.277308 157.2192 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 502.077308 154.6192 
+L 507.277308 157.2192 
+L 502.077308 159.8192 
+z
+" clip-path="url(#pa2011ffca6)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 34.866 192.1464 
+L 34.866 121.7376 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #0072b2; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 196.686 192.1464 
+L 196.686 121.7376 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #00795e; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 358.506 192.1464 
+L 358.506 121.7376 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #0072b2; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 520.326 192.1464 
+L 520.326 121.7376 
+" clip-path="url(#pa2011ffca6)" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="28.17" y="44.000719" transform="rotate(-0 28.17 44.000719)">Register first, review independently</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="28.728" y="63.013481" transform="rotate(-0 28.728 63.013481)">A changed input or rule requires a new pin and the appropriate re-review.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="43.236" y="134.530222" transform="rotate(-0 43.236 134.530222)">REGISTER</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(43.236 155.831487)">Question, null,</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(43.236 169.636175)">family, stop rules</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #00795e" x="205.056" y="134.530222" transform="rotate(-0 205.056 134.530222)">FREEZE</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(205.056 155.436175)">Code, inputs,</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(205.056 170.604925)">controls and hashes</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="366.876" y="134.530222" transform="rotate(-0 366.876 134.530222)">RUN</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(366.876 155.894769)">Start checks;</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(366.876 169.636175)">record outputs</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="528.696" y="134.530222" transform="rotate(-0 528.696 134.530222)">REVIEW</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(528.696 156.404925)">Science · numbers</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(528.696 169.636175)">· privacy</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="32.076" y="283.068" transform="rotate(-0 32.076 283.068)">A gate checks evidence for its own scope. A clean self-check is not an independent pass.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa2011ffca6">
+   <rect x="8.64" y="8.64" width="669.6" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>

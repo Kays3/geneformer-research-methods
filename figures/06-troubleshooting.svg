@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="686.88pt" height="372.096pt" viewBox="0 0 686.88 372.096" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 372.096 
+L 686.88 372.096 
+L 686.88 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 32.076 180.504 
+L 194.454 180.504 
+Q 201.15 180.504 201.15 173.8512 
+L 201.15 101.2248 
+Q 201.15 94.572 194.454 94.572 
+L 32.076 94.572 
+Q 25.38 94.572 25.38 101.2248 
+L 25.38 173.8512 
+Q 25.38 180.504 32.076 180.504 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 260.856 150.012 
+L 420.444 150.012 
+Q 427.14 150.012 427.14 143.3592 
+L 427.14 81.8208 
+Q 427.14 75.168 420.444 75.168 
+L 260.856 75.168 
+Q 254.16 75.168 254.16 81.8208 
+L 254.16 143.3592 
+Q 254.16 150.012 260.856 150.012 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #fff2e6; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 260.856 235.944 
+L 420.444 235.944 
+Q 427.14 235.944 427.14 229.2912 
+L 427.14 176.0688 
+Q 427.14 169.416 420.444 169.416 
+L 260.856 169.416 
+Q 254.16 169.416 254.16 176.0688 
+L 254.16 229.2912 
+Q 254.16 235.944 260.856 235.944 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #fff2e6; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 484.056 180.504 
+L 646.434 180.504 
+Q 653.13 180.504 653.13 173.8512 
+L 653.13 101.2248 
+Q 653.13 94.572 646.434 94.572 
+L 484.056 94.572 
+Q 477.36 94.572 477.36 101.2248 
+L 477.36 173.8512 
+Q 477.36 180.504 484.056 180.504 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 202.997455 132.607143 
+Q 227.655966 122.291596 250.87049 112.580121 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 245.069927 112.188367 
+L 250.87049 112.580121 
+L 247.076749 116.985519 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 202.499193 145.949592 
+Q 227.656404 173.575542 251.759737 200.044193 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 250.180949 194.448889 
+L 251.759737 200.044193 
+L 246.336221 197.950041 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 428.969916 112.012049 
+Q 452.250851 122.292376 474.099925 131.940426 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 470.393318 127.461467 
+L 474.099925 131.940426 
+L 468.292794 132.218336 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 428.485616 201.194517 
+Q 452.250129 174.959857 474.963806 149.88526 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 469.545809 151.99365 
+L 474.963806 149.88526 
+L 473.399719 155.484692 
+z
+" clip-path="url(#p33298b1fe8)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 34.866 169.9704 
+L 34.866 105.1056 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #0072b2; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 263.646 139.4784 
+L 263.646 85.7016 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 263.646 225.4104 
+L 263.646 179.9496 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 486.846 169.9704 
+L 486.846 105.1056 
+" clip-path="url(#p33298b1fe8)" style="fill: none; stroke: #00795e; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="28.17" y="44.000719" transform="rotate(-0 28.17 44.000719)">A practical route through common failures</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="28.728" y="63.013481" transform="rotate(-0 28.728 63.013481)">Start at the symptom; confirm the cause before changing a run.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="43.236" y="117.898222" transform="rotate(-0 43.236 117.898222)">NO OR INVALID OUTPUT</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(43.236 138.804175)">Check completion, NaNs</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(43.236 153.004175)">and the no-op control.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="272.016" y="98.494222" transform="rotate(-0 272.016 98.494222)">ALL SHIFTS ZERO?</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(272.016 119.400175)">Check precision and</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(272.016 134.568925)">resolution.</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="272.016" y="192.742222" transform="rotate(-0 272.016 192.742222)">CONSTANT SCORES?</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="272.016" y="213.648175" transform="rotate(-0 272.016 213.648175)">Check collapse diagnostics.</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #00795e" x="495.216" y="117.898222" transform="rotate(-0 495.216 117.898222)">REPAIR OR STOP</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(495.216 139.262769)">Trace the observed cause;</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(495.216 153.004175)">keep failed outputs and</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(495.216 167.204175)">change one thing per rerun.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="30.96" y="299.7" transform="rotate(-0 30.96 299.7)">A failed gate is not evidence of no biological effect.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p33298b1fe8">
+   <rect x="8.64" y="8.64" width="669.6" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,5 +1,9 @@
 # Criteria for implementation and reporting
 
+![Registration and independent review](../figures/05-review-flow.svg)
+
+[Figure sources and regeneration](../figures/README.md).
+
 These are the rules we fix before a Geneformer study runs and the items a report must state. Each rule exists because its absence cost us a result, GPU time or a retraction; `docs/ISSUES.md` gives the cases.
 
 Tags: `[D1]` to `[D4]` point to a public dataset in `docs/DATASETS.md`. "Internal record" marks a lesson from unpublished data, given without numbers.

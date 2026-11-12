@@ -39,6 +39,12 @@ Other limits a reader should keep in mind:
 - Several criteria (a 20-control rule, a 50-cell floor, a 0.60 gate) are conventions we fixed in advance. We claim they were useful, not that they are optimal.
 - An embedding shift is a statement about the model's representation of a cell. It is not a measured knockout, and none of this replaces an experiment.
 
+## Illustrated guide
+
+![Pipeline from counts to reviewed readout](figures/01-pipeline.svg)
+
+[Browse all figures, their sources and regeneration command](figures/README.md).
+
 ## Licence
 
 Code under `patterns/` is released under the MIT licence (`LICENSE`). Text and templates are released under CC BY 4.0 (`LICENSE-DOCS.md`).

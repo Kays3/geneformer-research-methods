@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="686.88pt" height="372.096pt" viewBox="0 0 686.88 372.096" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 372.096 
+L 686.88 372.096 
+L 686.88 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 227.680373 190.180791 
+Q 252.765136 165.257865 276.739527 141.438148 
+" clip-path="url(#p39bebb53ec)" style="fill: none; stroke: #d55e00; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 271.218173 143.258767 
+L 276.739527 141.438148 
+L 274.883209 146.947602 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #d55e00; stroke: #d55e00; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 489.636 147.24 
+L 649.224 147.24 
+Q 655.92 147.24 655.92 140.5872 
+L 655.92 79.0488 
+Q 655.92 72.396 649.224 72.396 
+L 489.636 72.396 
+Q 482.94 72.396 482.94 79.0488 
+L 482.94 140.5872 
+Q 482.94 147.24 489.636 147.24 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 489.636 305.244 
+L 649.224 305.244 
+Q 655.92 305.244 655.92 298.5912 
+L 655.92 237.0528 
+Q 655.92 230.4 649.224 230.4 
+L 489.636 230.4 
+Q 482.94 230.4 482.94 237.0528 
+L 482.94 298.5912 
+Q 482.94 305.244 489.636 305.244 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 279.27 191.592 
+L 279.27 138.924 
+" clip-path="url(#p39bebb53ec)" style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #586978; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 492.426 136.7064 
+L 492.426 82.9296 
+" clip-path="url(#p39bebb53ec)" style="fill: none; stroke: #0072b2; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 492.426 294.7104 
+L 492.426 240.9336 
+" clip-path="url(#p39bebb53ec)" style="fill: none; stroke: #00795e; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="28.17" y="44.000719" transform="rotate(-0 28.17 44.000719)">An edit moves a representation along an axis</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="28.728" y="63.013481" transform="rotate(-0 28.728 63.013481)">Illustrative geometry; points and arrow lengths are schematic.</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 122.240374 191.592 
+Q 309.959514 191.592 495.442585 191.592 
+" style="fill: none; stroke: #586978; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 491.042585 189.392 
+L 495.442585 191.592 
+L 491.042585 193.792 
+" style="fill: none; stroke: #586978; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="109.08" y="212.6592" transform="rotate(-0 109.08 212.6592)">start centroid</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="455.04" y="212.6592" transform="rotate(-0 455.04 212.6592)">goal centroid</text>
+   </g>
+   <g id="PathCollection_1">
+    <path d="M 226.26 196.836044 
+C 227.650737 196.836044 228.9847 196.283499 229.968099 195.300099 
+C 230.951499 194.3167 231.504044 192.982737 231.504044 191.592 
+C 231.504044 190.201263 230.951499 188.8673 229.968099 187.883901 
+C 228.9847 186.900501 227.650737 186.347956 226.26 186.347956 
+C 224.869263 186.347956 223.5353 186.900501 222.551901 187.883901 
+C 221.568501 188.8673 221.015956 190.201263 221.015956 191.592 
+C 221.015956 192.982737 221.568501 194.3167 222.551901 195.300099 
+C 223.5353 196.283499 224.869263 196.836044 226.26 196.836044 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #0072b2; stroke: #0072b2"/>
+    <path d="M 279.27 143.924 
+C 280.596015 143.924 281.867899 143.397168 282.805534 142.459534 
+C 283.743168 141.521899 284.27 140.250015 284.27 138.924 
+C 284.27 137.597984 283.743168 136.326101 282.805534 135.388466 
+C 281.867899 134.450832 280.596015 133.924 279.27 133.924 
+C 277.943984 133.924 276.672101 134.450832 275.734466 135.388466 
+C 274.796832 136.326101 274.27 137.597984 274.27 138.924 
+C 274.27 140.250015 274.796832 141.521899 275.734466 142.459534 
+C 276.672101 143.397168 277.943984 143.924 279.27 143.924 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #d55e00; stroke: #d55e00"/>
+    <path d="M 251.37 243.459416 
+C 252.627969 243.459416 253.834584 242.95962 254.724102 242.070102 
+C 255.61362 241.180584 256.113416 239.973969 256.113416 238.716 
+C 256.113416 237.458031 255.61362 236.251416 254.724102 235.361898 
+C 253.834584 234.47238 252.627969 233.972584 251.37 233.972584 
+C 250.112031 233.972584 248.905416 234.47238 248.015898 235.361898 
+C 247.12638 236.251416 246.626584 237.458031 246.626584 238.716 
+C 246.626584 239.973969 247.12638 241.180584 248.015898 242.070102 
+C 248.905416 242.95962 250.112031 243.459416 251.37 243.459416 
+z
+" clip-path="url(#p39bebb53ec)" style="fill: #00795e; stroke: #00795e"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 228.262758 191.592 
+Q 252.765474 191.592 273.914088 191.592 
+" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 269.514088 189.392 
+L 273.914088 191.592 
+L 269.514088 193.792 
+" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="198.36" y="177.732" transform="rotate(-0 198.36 177.732)">original</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="286.524" y="140.5872" transform="rotate(-0 286.524 140.5872)">edited</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #00795e" x="219.564" y="229.2912" transform="rotate(-0 219.564 229.2912)">matched edit</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="500.796" y="95.722222" transform="rotate(-0 500.796 95.722222)">GOAL AXIS</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(500.796 117.596925)">Cross-fit and check</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(500.796 131.796925)">resolution first.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #00795e" x="500.796" y="253.726222" transform="rotate(-0 500.796 253.726222)">MATCHED NULL</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(500.796 274.632175)">Compare with edits matched</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(500.796 289.800925)">on rank and detection.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="30.96" y="338.508" transform="rotate(-0 30.96 338.508)">An axis projection is not a measured effect in a cell.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p39bebb53ec">
+   <rect x="8.64" y="8.64" width="669.6" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>
