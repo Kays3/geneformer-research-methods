@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the methods diagrams offline: python figures/src/draw.py."""
 from pathlib import Path
+import sys
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
@@ -25,18 +26,21 @@ def arrow(ax,x1,y1,x2,y2,color=GREY):
  ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2),arrowstyle='-|>',mutation_scale=13,linewidth=1.4,color=color,connectionstyle='arc3'))
 
 def save(fig,name):
+ if len(sys.argv) > 1 and name not in sys.argv[1:]:
+  plt.close(fig)
+  return
  for ext in ('svg','png'):
   metadata = {'Creator': None, 'Date': None} if ext == 'svg' else {'Software': 'Matplotlib'}
   fig.savefig(OUT/f'{name}.{ext}',dpi=180,bbox_inches='tight',pad_inches=.12,metadata=metadata)
  plt.close(fig)
 
 fig,ax=canvas('From counts to a reviewed readout','Each transition has an output and a check; model shifts are predictions.')
-nodes=[('01  Prepare','Counts and\nprovenance'),('02  Tokenise','Ranked gene\nsequences'),('03  Embed','Released or\nfine-tuned\nmodel'),('04  Perturb','Delete or move\na token'),('05  Readout','Magnitude or\nstate direction'),('06  Test','Matched null;\ndonor-level test')]
+nodes=[('Prepare','Counts and\nprovenance'),('Tokenise','Ranked gene\nsequences'),('Embed','Released or\nfine-tuned\nmodel'),('Perturb','Delete or move\na token'),('Readout','Magnitude or\nstate direction'),('Test','Matched null;\ntest by donor')]
 for i,(t,b) in enumerate(nodes):
  x=.35+i*1.92;box(ax,x,2.65,1.65,1.65,t,b,color=BLUE if i<3 else GREEN)
  if i<5:arrow(ax,x+1.72,3.47,x+1.88,3.47)
 box(ax,.35,.8,5.45,1.05,'BEFORE','Fix the cohort, controls, rules and stop conditions.',ORANGE,LIGHT)
-box(ax,6.15,.8,5.45,1.05,'AFTER','Record limitations; science, numbers and privacy reviews.',GREEN)
+box(ax,6.15,.8,5.45,1.05,'AFTER','Record limits; science, numbers\nand privacy reviews.',GREEN)
 save(fig,'01-pipeline')
 
 fig,ax=canvas('An edit moves a representation along an axis','Illustrative geometry; points and arrow lengths are schematic.')
@@ -44,7 +48,7 @@ ax.annotate('',xy=(8.8,3.1),xytext=(2,3.1),arrowprops={'arrowstyle':'->','lw':2,
 ax.scatter([3.9,4.85,4.35],[3.1,4.05,2.25],s=[110,100,90],c=[BLUE,ORANGE,GREEN],zorder=3)
 arrow(ax,3.9,3.1,4.85,4.05,ORANGE);ax.plot([4.85,4.85],[3.1,4.05],ls=':',color=GREY);ax.annotate('',xy=(4.85,3.1),xytext=(3.9,3.1),arrowprops={'arrowstyle':'->','color':ORANGE,'lw':3})
 ax.text(3.4,3.35,'original',color=BLUE);ax.text(4.98,4.02,'edited',color=ORANGE);ax.text(3.78,2.42,'matched edit',color=GREEN)
-box(ax,8.55,3.95,3,1.0,'GOAL AXIS','Cross-fit and check\nresolution first.',BLUE)
+box(ax,8.55,3.95,3,1.25,'GOAL AXIS','Cross-fit and check\nresolution first.',BLUE)
 box(ax,8.55,1.1,3,1.25,'MATCHED NULL','Compare with edits matched\non rank and detection.',GREEN)
 ax.text(.4,.45,'An axis projection is not a measured effect in a cell.',color=GREY,fontsize=10)
 save(fig,'02-axis-null')
@@ -76,7 +80,7 @@ save(fig,'05-review-flow')
 
 fig,ax=canvas('A practical route through common failures','Start at the symptom; confirm the cause before changing a run.')
 box(ax,.35,3.35,3.05,1.45,'NO OR INVALID OUTPUT','Check completion, NaNs\nand the no-op control.',BLUE)
-box(ax,4.45,4.05,3.0,1.05,'ALL SHIFTS ZERO?','Check precision and\nresolution.',ORANGE,LIGHT)
+box(ax,4.45,3.90,3.0,1.25,'ALL SHIFTS ZERO?','Check precision and\nresolution.',ORANGE,LIGHT)
 box(ax,4.45,2.35,3.0,1.1,'CONSTANT SCORES?','Check collapse diagnostics.',ORANGE,LIGHT)
 box(ax,8.45,3.35,3.05,1.45,'REPAIR OR STOP','Trace the observed cause;\nkeep failed outputs and\nchange one thing per rerun.',GREEN)
 for a,b in [((3.45,4.15),(4.4,4.55)),((3.45,3.95),(4.4,2.9)),((7.5,4.55),(8.4,4.15)),((7.5,2.9),(8.4,3.9))]:arrow(ax,*a,*b)
