@@ -1,5 +1,9 @@
 # Pipeline
 
+![Pipeline from counts to a reviewed readout](../figures/01-pipeline.svg)
+
+[Figure sources and regeneration](../figures/README.md).
+
 Nine stages from raw counts to a gated result. Each stage lists its inputs, outputs and checks. Stages 1 to 5 and 8 to 9 need no GPU. The checks are the part most often skipped and the part that saved the most GPU time.
 
 Tags `[D1]` to `[D4]` point to `docs/DATASETS.md`.

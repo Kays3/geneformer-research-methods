@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="686.88pt" height="372.096pt" viewBox="0 0 686.88 372.096" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 372.096 
+L 686.88 372.096 
+L 686.88 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 37.656 180.504 
+L 211.194 180.504 
+Q 217.89 180.504 217.89 173.8512 
+L 217.89 92.9088 
+Q 217.89 86.256 211.194 86.256 
+L 37.656 86.256 
+Q 30.96 86.256 30.96 92.9088 
+L 30.96 173.8512 
+Q 30.96 180.504 37.656 180.504 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #fff2e6; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 255.276 180.504 
+L 428.814 180.504 
+Q 435.51 180.504 435.51 173.8512 
+L 435.51 92.9088 
+Q 435.51 86.256 428.814 86.256 
+L 255.276 86.256 
+Q 248.58 86.256 248.58 92.9088 
+L 248.58 173.8512 
+Q 248.58 180.504 255.276 180.504 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 472.896 180.504 
+L 646.434 180.504 
+Q 653.13 180.504 653.13 173.8512 
+L 653.13 92.9088 
+Q 653.13 86.256 646.434 86.256 
+L 472.896 86.256 
+Q 466.2 86.256 466.2 92.9088 
+L 466.2 173.8512 
+Q 466.2 180.504 472.896 180.504 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #edf4f8; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 219.886798 136.152 
+Q 233.23341 136.152 245.014775 136.152 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 239.814775 133.552 
+L 245.014775 136.152 
+L 239.814775 138.752 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 437.506798 136.152 
+Q 450.85341 136.152 462.634775 136.152 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 457.434775 133.552 
+L 462.634775 136.152 
+L 457.434775 138.752 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #586978; stroke: #586978; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 37.656 308.016 
+L 646.434 308.016 
+Q 653.13 308.016 653.13 301.3632 
+L 653.13 239.8248 
+Q 653.13 233.172 646.434 233.172 
+L 37.656 233.172 
+Q 30.96 233.172 30.96 239.8248 
+L 30.96 301.3632 
+Q 30.96 308.016 37.656 308.016 
+z
+" clip-path="url(#p9ade56913c)" style="fill: #fff2e6; stroke: #c5d3db; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 40.446 169.9704 
+L 40.446 96.7896 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 258.066 169.9704 
+L 258.066 96.7896 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #0072b2; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 475.686 169.9704 
+L 475.686 96.7896 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #00795e; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 40.446 297.4824 
+L 40.446 243.7056 
+" clip-path="url(#p9ade56913c)" style="fill: none; stroke: #d55e00; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17324d" x="28.17" y="44.000719" transform="rotate(-0 28.17 44.000719)">Collapse can return a successful exit code</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #586978" x="28.728" y="63.013481" transform="rotate(-0 28.728 63.013481)">Illustration of diagnostics; no observed data or fitted values are shown.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="48.816" y="109.582222" transform="rotate(-0 48.816 109.582222)">SYMPTOMS</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(48.816 130.488175)">Nearly constant predictions</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(48.816 145.656925)">AUC near chance</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(48.816 158.888175)">Embeddings nearly identical</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="266.436" y="109.582222" transform="rotate(-0 266.436 109.582222)">CHECK EVERY EPOCH</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(266.436 131.456925)">Evaluation AUC</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(266.436 144.688175)">Prediction spread</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(266.436 158.888175)">Loss and gradient logs</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #00795e" x="484.056" y="109.582222" transform="rotate(-0 484.056 109.582222)">CHECK EMBEDDINGS</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(484.056 131.456925)">Pairwise cosine on a seeded</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(484.056 144.688175)">stratified sample</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(484.056 158.888175)">Void a collapsed arm</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d55e00" x="48.816" y="256.498222" transform="rotate(-0 48.816 256.498222)">INTERPRETATION</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(48.816 277.404175)">Cause not established. Keep the best eligible checkpoint; report failed epochs.</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17324d" transform="translate(48.816 291.604175)">A collapsed model can still emit numbers: those readings are void.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9ade56913c">
+   <rect x="8.64" y="8.64" width="669.6" height="354.816"/>
+  </clipPath>
+ </defs>
+</svg>

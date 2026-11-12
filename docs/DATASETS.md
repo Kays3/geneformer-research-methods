@@ -1,5 +1,7 @@
 # Public datasets behind the numbers
 
+The [illustrated guide](../figures/README.md) uses schematics and a clearly labelled synthetic example; it does not plot these datasets.
+
 Every number in this repository comes from one of the datasets below. Each number in the other files carries a tag such as `[D2]` that points here. The analysis code for these studies is not public. Public status was taken from our download records; check the hosting site before you rely on an accession.
 
 | Tag | Dataset | Accession | Cells used | Models |

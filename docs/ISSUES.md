@@ -1,5 +1,11 @@
 # Failure modes
 
+![Troubleshooting route for common symptoms](../figures/06-troubleshooting.svg)
+
+![Fine-tune collapse diagnostics](../figures/04-collapse.svg)
+
+[Figure sources and regeneration](../figures/README.md).
+
 Each entry: what we saw, the root cause, how to detect it, and the fix. Entries marked "internal record" come from unpublished data and carry no numbers. Tags `[D1]` to `[D4]` point to `docs/DATASETS.md`.
 
 Several of these runs finished with exit code 0. A clean exit says the code ran, not that the output means anything.

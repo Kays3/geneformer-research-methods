@@ -1,5 +1,11 @@
 # Statistics
 
+![Start-to-goal axis and matched null](../figures/02-axis-null.svg)
+
+![Synthetic matched-null example](../figures/07-synthetic-readout.svg)
+
+[Figure sources and regeneration](../figures/README.md).
+
 How we test an ISP effect and how we word the outcome. Tags `[D1]` to `[D4]` point to `docs/DATASETS.md`.
 
 ## 1. The unit is the donor
