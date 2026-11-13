@@ -52,3 +52,7 @@ Other limits a reader should keep in mind:
 ## Licence
 
 Code under `patterns/` is released under the MIT licence (`LICENSE`). Text and templates are released under CC BY 4.0 (`LICENSE-DOCS.md`).
+
+## Research website
+
+[Explore the current computational research](https://kays3.github.io/research/#digital-pathology) and [the broader research portfolio](https://kays3.github.io/). This repository is a methods record: it does not by itself establish biological mechanisms or report the outcome of a particular perturbation experiment.
