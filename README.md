@@ -1,5 +1,9 @@
 # Geneformer research methods
 
+![Illustration of a cell whose ranked gene tokens flow toward a map of cell states](assets/banner.webp)
+
+*Artwork reused from [Kaisar's research website](https://kays3.github.io/). AI-generated illustration, not a scientific result.*
+
 Working criteria, a pipeline, known failure modes and reusable patterns for research that fine-tunes Geneformer and runs in silico perturbation (ISP: editing a cell's token sequence and reading how its embedding moves).
 
 This repository records what one research group learned over about five months of Geneformer work on single-cell and single-nucleus data. It is a methods record. It is not a software package and it holds no trained model.
