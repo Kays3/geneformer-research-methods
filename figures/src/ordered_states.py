@@ -90,7 +90,7 @@ fig.text(
 fig.text(
     0.055,
     0.06,
-    "Synthetic unit-vector geometry   ·   Motion illustrates each comparison; frames do not represent biological time.",
+    "Synthetic unit-vector geometry   ·   Each comparison uses an independent starting cohort.",
     fontsize=9,
 )
 ani = FuncAnimation(fig, draw, frames=72, interval=110)
