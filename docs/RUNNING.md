@@ -79,3 +79,22 @@ Each connected marker pair comes from one donor. The crossing denominator includ
 For a prespecified natural-retention intersection, add `--intersection` to `scrna-isp-compare`. The input runs must still cover the same registered reference and evaluation cells. This mode reports the registered, native-eligible and shared cell counts by start state, then checks exact target and control membership on the shared cells.
 
 The encoder receipt includes replay on up to three unedited inputs and the largest absolute coordinate discrepancy. Set acceptable tolerances from model precision and development runs. Store a full environment lock with the study for release. The example cis locus has published experimental provenance. [Soldner et al.](https://www.nature.com/articles/nature17939)
+
+### Pair cis scoring with both RNA workflows
+
+For a single-gene state comparison, run the expression-only command above for a verified allele of the focal gene. For a pathway screen, register one or more independently supported regulatory loci and their cell conditions. Add `--include-accessibility` to request the variant-centered single-cell ATAC readout alongside target-gene expression. Each modality retains its native score scale and training-support labels.
+
+```sh
+scrna-isp-cis out/pathway-cis --chromosome chr21 --position 39094644 --ref G --alt A \
+  --gene ENSG00000157557 --condition UBERON:0001155_CL:0000235 --include-accessibility
+```
+
+This public example scores ETS2 in colon macrophages. Expression rows are gene-specific. Accessibility rows describe the locus. Repeat the focal allele and compare flanking alleles, an alternate cell condition and a second model fold before interpreting a regulatory signal. Keep the RNA state and cis score tables in separate files. Join their interpretations by declared gene, biological context and evidence level.
+
+### Use a task-fine-tuned checkpoint
+
+Treat fine-tuning as an upstream training stage. Select the phenotype and training donors before fitting. Retain the frozen pretrained model as a paired comparator. For a phenotype with a direct gene readout, register whether its gene is visible to the classifier and run a masked-target sensitivity. Check intermediate-state recall and compare against a count baseline and a technical-covariate baseline on held-out units.
+
+For Geneformer V1/V2, supply the trained encoder in the same checkpoint-compatible Transformers directory format to `scrna-isp-embed`. For whole-human scGPT, supply the complete compatible encoder weights, vocabulary and configuration. A classifier-head-only artifact cannot reproduce a fine-tuned encoder. Store the parent checkpoint hash, label definitions, training/validation split hashes, trainable layers, optimizer, stopping epoch, seed and checkpoint selection rule. Give frozen and tuned runs distinct model IDs in `scrna-isp benchmark`; compare them on the same reference nuclei, test nuclei, edits, controls and readout. A cell-type classifier and a disease-state classifier answer different questions.
+
+For pooled libraries use nucleus-level partitions for a descriptive within-library comparison. Report donor transfer as unevaluated. For the AlphaGenome 2 arm record the service model version, condition and fold. Changing service folds is a pretrained-model sensitivity analysis. It does not train AlphaGenome on the study.
