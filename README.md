@@ -43,6 +43,10 @@ Other limits a reader should keep in mind:
 - Several criteria (a 20-control rule, a 50-cell floor, a 0.60 gate) are conventions we fixed in advance. We claim they were useful, not that they are optimal.
 - An embedding shift is a statement about the model's representation of a cell. It is not a measured knockout, and none of this replaces an experiment.
 
+## Standard for new single-cell datasets
+
+[Start a private ISP study](standards/single-cell-isp/README.md) with a donor-held-out design for Geneformer V1, V2 and scGPT, or a registered allele-expression comparison for AlphaGenome 2. Both workflows include a study initializer, a hash lock, a score command and synthetic inputs.
+
 ## Cross-model perturbation benchmark
 
 [Run the cardiac ISP benchmark](benchmarks/cardiac-isp/README.md) for Geneformer V1, V2, scGPT and AlphaGenome 2. It provides a published numerical anchor, model-specific checks and a local scorer with synthetic inputs.

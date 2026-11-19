@@ -1,0 +1,3 @@
+locus	variant	gene	ref	alt	prediction	beta	se
+L1	mock1	G1	A	G	0.2	0.1	0.02
+L2	mock2	G2	C	T	-0.1	NA	NA
