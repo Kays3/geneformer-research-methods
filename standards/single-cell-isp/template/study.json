@@ -1,0 +1,55 @@
+{
+  "study": "FILL study",
+  "dataset": "FILL dataset",
+  "species": "FILL species",
+  "cell_type": "FILL cell_type",
+  "count_layer": "FILL count_layer",
+  "target": "FILL target",
+  "edit": "FILL edit",
+  "control_rule": "FILL control_rule",
+  "positive_control": "FILL positive_control",
+  "validation_plan": "FILL validation_plan",
+  "null_and_multiplicity": "FILL null_and_multiplicity",
+  "checkpoint_selection": "FILL checkpoint_selection",
+  "eligibility": "FILL eligibility",
+  "state_reference": "FILL state_reference",
+  "software_environment": "FILL software_environment",
+  "axes": {
+    "goal": 1,
+    "alternate": -1
+  },
+  "min_shared_donors": null,
+  "models": {
+    "v1": {
+      "checkpoint": "FILL checkpoint",
+      "tokenizer": "FILL tokenizer",
+      "readout": "FILL readout",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    },
+    "v2": {
+      "checkpoint": "FILL checkpoint",
+      "tokenizer": "FILL tokenizer",
+      "readout": "FILL readout",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    },
+    "scgpt": {
+      "checkpoint": "FILL checkpoint",
+      "tokenizer": "FILL tokenizer",
+      "readout": "FILL readout",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    }
+  },
+  "alphagenome2": {
+    "status": "not_assessed",
+    "reason": "FILL allele, molecular track and comparator feasibility"
+  }
+}
