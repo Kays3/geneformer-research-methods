@@ -1,0 +1,11 @@
+cell	donor	role	state	GENE_A	GENE_B	GENE_C	GENE_D
+r1	R1	reference	high	10	8	2	1
+r2	R2	reference	high	8	7	2	2
+r3	R1	reference	mid	5	5	5	4
+r4	R2	reference	mid	4	5	6	4
+r5	R1	reference	low	1	2	8	9
+r6	R2	reference	low	1	1	7	9
+x1	X	evaluation	high	9	7	2	2
+x2	X	evaluation	mid	5	4	6	5
+y1	Y	evaluation	high	8	8	3	2
+y2	Y	evaluation	mid	4	4	6	5

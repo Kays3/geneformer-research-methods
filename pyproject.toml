@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrna-isp-pipeline"
+version = "0.1.0"
+description = "Matched single-cell perturbation benchmarking and state-reference analysis"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+readme = "README.md"
+
+[project.scripts]
+scrna-isp = "scrna_isp.cli:main"
+scrna-isp-embed = "scrna_isp.encoders:main"
+scrna-isp-compare = "scrna_isp.compare:main"
+scrna-isp-tokenize = "scrna_isp.tokenize:main"
+scrna-isp-cis = "scrna_isp.genomic:main"
+scrna-isp-plot = "scrna_isp.plot:main"
+scrna-isp-example-h5ad = "scrna_isp.example_h5ad:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scrna_isp = ["example/*.tsv"]
+
+[project.optional-dependencies]
+h5ad = ["anndata>=0.10", "numpy>=1.24", "scipy>=1.10"]
+geneformer = ["torch>=2.1", "transformers>=4.40,<5"]
+scgpt = ["torch>=2.1", "scgpt==0.2.5"]
+cis = ["alphagenome>=2,<3"]
+plots = ["matplotlib>=3.5"]
