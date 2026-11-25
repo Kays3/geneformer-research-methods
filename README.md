@@ -1,20 +1,45 @@
-# Geneformer research methods
+# Open-source single-cell ISP pipeline
 
-![Illustration of a cell whose ranked gene tokens flow toward a map of cell states](assets/banner.webp)
+Run matched in silico perturbation (ISP) benchmarks for single-cell and single-nucleus RNA sequencing. Use a count baseline, Geneformer V1, Geneformer V2 or scGPT to measure how gene deletions change the similarity of a cell to predefined states. AlphaGenome 2 supplies a separate sequence-based comparison for a registered allele and molecular track.
 
-*Artwork reused from [Kaisar's research website](https://kays3.github.io/). AI-generated illustration, not a scientific result.*
+## Run the first benchmark
 
-Working criteria, a pipeline, known failure modes and reusable patterns for research that fine-tunes Geneformer and runs in silico perturbation (ISP: editing a cell's token sequence and reading how its embedding moves).
+From a checkout with Python 3.9 or later:
 
-This repository records what one research group learned over about five months of Geneformer work on single-cell and single-nucleus data. It is a methods record. It is not a software package and it holds no trained model.
+```sh
+python -m pip install .
+scrna-isp demo results/demo
+```
 
-## Who it is for
+The offline demo uses synthetic counts, two reference donors and two independent evaluation donors. Open `coverage.tsv` for state assignments and eligibility, `shifts.tsv` for target and matched-control effects, `donor_summary.tsv` for per-donor estimates and `receipt.json` for hashes and per-state recall. The demo runs the count baseline. The model workflows use your checkpoint-compatible environment and weights.
 
-- People who plan a Geneformer fine-tune or an ISP screen and want a checklist of what to fix before spending GPU time.
-- Reviewers who need to judge whether an ISP result can be trusted.
-- People who hit a strange result (all-zero shifts, a classifier that predicts one class, two runs that disagree) and want to know the likely causes.
+[Run with your data](docs/RUNNING.md) · [Benchmark criteria](docs/ORDERED-STATES.md) · [Registration, locking and scoring](standards/single-cell-isp/README.md)
 
-It assumes you already know the Geneformer library and its published protocol (*Nature Protocols*, 2026, doi:10.1038/s41596-026-01364-8). Nothing here replaces that protocol. Where our criteria differ from it, `docs/CRITERIA.md` places the two side by side.
+## How the comparison works
+
+![Animation of a synthetic matched edit and a control edit on two adjacent state comparisons](figures/08-state-shifts.gif)
+
+The first example favors the intermediate state while the edited point remains closest to high. The second starts with a different point and crosses the nearest-state boundary. The circle represents unit-vector cosine geometry. [Static alternative](figures/08-state-shifts.png) · [Formulas and interpretation](docs/ORDERED-STATES.md)
+
+```mermaid
+flowchart TD
+  C[Raw counts and cell metadata] --> R[Freeze donors, states, targets and matched controls]
+  R --> B[Count baseline]
+  R --> V1[Geneformer V1]
+  R --> V2[Geneformer V2]
+  R --> SC[scGPT]
+  B --> S[Per-cell state similarities and coverage]
+  V1 --> S
+  V2 --> S
+  SC --> S
+  S --> D[Matched comparison and donor summaries]
+  A[Registered genomic allele and condition] --> AG[AlphaGenome 2]
+  AG --> M[Track-specific prediction vs measured cis effect]
+```
+
+## Methods record
+
+The original field guide documents fine-tuning and perturbation experiments, failed checks and study-specific conventions. The executable pipeline extends that guide with matched-input workflows and a reproducible synthetic benchmark.
 
 ## What is in it
 
@@ -38,7 +63,7 @@ Each statement here rests on one of two kinds of evidence, and the text says whi
 
 Other limits a reader should keep in mind:
 
-- The work used Geneformer V2 checkpoints (104M and 316M) and one pinned library commit. Library behaviour described here was read at that commit and may change.
+- The original field guide used Geneformer V2 checkpoints (104M and 316M) and one pinned library commit. Library behaviour described here was read at that commit and may change.
 - Most lessons come from T cells in tumour atlases, one heart atlas and one single-nucleus study. They are not a survey of tissues.
 - Several criteria (a 20-control rule, a 50-cell floor, a 0.60 gate) are conventions we fixed in advance. We claim they were useful, not that they are optimal.
 - An embedding shift is a statement about the model's representation of a cell. It is not a measured knockout, and none of this replaces an experiment.
@@ -59,7 +84,7 @@ Other limits a reader should keep in mind:
 
 ## Licence
 
-Code under `patterns/` is released under the MIT licence (`LICENSE`). Text and templates are released under CC BY 4.0 (`LICENSE-DOCS.md`).
+Pipeline and example code are released under the MIT licence (`LICENSE`). Text and templates are released under CC BY 4.0 (`LICENSE-DOCS.md`).
 
 ## Research website
 
