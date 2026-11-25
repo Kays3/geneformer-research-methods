@@ -1,0 +1,12 @@
+{
+  "study": "Synthetic cis example",
+  "build": "synthetic",
+  "model": "synthetic checkpoint",
+  "condition": "fictional cell type",
+  "track": "fictional expression",
+  "scorer": "signed ALT versus REF",
+  "window_rule": "fixed synthetic window",
+  "comparison_study": "synthetic coefficients",
+  "allele_harmonization": "ALT-counted synthetic beta",
+  "selection_and_controls": "one synthetic allele per locus"
+}

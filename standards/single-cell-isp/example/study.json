@@ -1,0 +1,55 @@
+{
+  "study": "Synthetic state transfer",
+  "dataset": "Generated fixture, no biological measurements",
+  "species": "synthetic human-like vocabulary",
+  "cell_type": "fictional population",
+  "count_layer": "synthetic observed counts",
+  "target": "G0",
+  "edit": "omit gene",
+  "control_rule": "Two detected genes shared across model contexts, fixed per cell",
+  "positive_control": "Mock measured edit used to exercise the reporting logic",
+  "validation_plan": "Synthetic held-out donors X and Y. In real data use an untouched cohort.",
+  "null_and_multiplicity": "Single synthetic target. In production run matched null genes through the full rule.",
+  "checkpoint_selection": "Fixed synthetic models. Select real checkpoints on development donors only.",
+  "eligibility": "All listed fixture cells, exhaustive held-out target and control intersection.",
+  "state_reference": "Synthetic goal and alternate state axes. Build real centroids only on training donors.",
+  "software_environment": "Synthetic outputs; Python standard library",
+  "axes": {
+    "goal": 1,
+    "alternate": -1
+  },
+  "min_shared_donors": 1,
+  "models": {
+    "v1": {
+      "checkpoint": "synthetic v1",
+      "tokenizer": "fixture vocabulary",
+      "readout": "synthetic cosine shift",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    },
+    "v2": {
+      "checkpoint": "synthetic v2",
+      "tokenizer": "fixture vocabulary",
+      "readout": "synthetic cosine shift",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    },
+    "scgpt": {
+      "checkpoint": "synthetic scgpt",
+      "tokenizer": "fixture vocabulary",
+      "readout": "synthetic cosine shift",
+      "margins": {
+        "goal": 0.01,
+        "alternate": 0.01
+      }
+    }
+  },
+  "alphagenome2": {
+    "status": "not_applicable",
+    "reason": "No genomic allele in this synthetic transcriptome example."
+  }
+}

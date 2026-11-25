@@ -1,0 +1,12 @@
+{
+  "study": "FILL study",
+  "build": "FILL build",
+  "model": "FILL model",
+  "condition": "FILL condition",
+  "track": "FILL track",
+  "scorer": "FILL scorer",
+  "window_rule": "FILL window_rule",
+  "comparison_study": "FILL comparison_study",
+  "allele_harmonization": "FILL allele_harmonization",
+  "selection_and_controls": "FILL selection_and_controls"
+}

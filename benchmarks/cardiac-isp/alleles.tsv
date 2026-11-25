@@ -1,0 +1,4 @@
+locus	variant	prediction	beta	se
+L1	mock-A-G	-0.2	-0.15	0.04
+L2	mock-C-T	0.1	-0.01	0.03
+L3	mock-G-A	0.1	NA	NA

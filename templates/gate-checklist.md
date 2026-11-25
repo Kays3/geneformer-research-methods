@@ -36,3 +36,10 @@ Three independent reviews before a result is merged or quoted. The author does n
 ## Re-gate
 - A prose-only fix of a few lines may be checked as a delta. A change to any script, table or number gets a full read.
 - The verdict states the head commit and description hash it was taken on, re-read as the last action before writing.
+
+## Ordered states and model comparison
+
+- [ ] Native and shared eligibility are recorded for each model, cell, target and matched control. Gene-set deletions state the retained gene identities and control cardinality.
+- [ ] Intermediate-state recall, goal and alternate similarities, relative shifts and target/control crossing denominators are reported for each adjacent step.
+- [ ] Direct overlap between the endpoint and the intervention is quantified. Independent-label or leave-family-out sensitivity is reported where available.
+- [ ] AlphaGenome results list the genomic assembly, allele direction, condition, assay support, fold, reference and control checks, and independent measured comparator.

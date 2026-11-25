@@ -19,3 +19,9 @@ python figures/src/draw.py
 ```
 
 The synthetic panel uses a fixed random seed. No dataset download, Geneformer installation or GPU is required. The diagrams summarise the linked text; consult the documents for the full decision rules and limitations.
+
+## Ordered-state animation
+
+[Animated walkthrough](08-state-shifts.gif) and [static companion](08-state-shifts.png). The two comparisons use independent synthetic starting points. Rebuild both with `uv run --no-project --with matplotlib python figures/src/ordered_states.py`.
+
+[Benchmark diagnostic figure](09-synthetic-benchmark.png) is generated from the packaged count demo using `scrna-isp-plot`. It contrasts direct and relative changes with held-out recall and assignment crossings.

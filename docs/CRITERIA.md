@@ -114,3 +114,7 @@ We compared the protocol's criteria with ours on the protocol's own example atla
 | No counterpart in ours | Embedding inspection (UMAP), experimental validation of a top target | Replication in an independent cohort; neither replaces the other |
 
 This comparison did not settle which set is better. Our adoption rule for a merged "balanced" set needed two measurements, and neither was made on its own terms; sensitivity was scored for no criterion because the one validated positive was never scored. The table is a map of differences, not a ranking.
+
+## Cross-model ordered-state reporting
+
+Apply the [ordered-state criteria](ORDERED-STATES.md) when a study includes an intermediate reference. Record direct and relative shifts, intermediate recall, matched-control crossings, pathway overlap with the state definition, and donor coverage on each adjacent step. The [runnable workflow](RUNNING.md) preserves these outputs for external review.
