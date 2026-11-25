@@ -13,7 +13,7 @@ python3 standards/single-cell-isp/isp.py check ../my-private-study/isp-run-01
 python3 standards/single-cell-isp/isp.py lock ../my-private-study/isp-run-01
 # Commit the registration, lock and environment before examining test target shifts.
 # Run each model adapter on the registered cells and export the table described below.
-python3 standards/single-cell-isp/isp.py score ../my-private-study/isp-run-01 ../my-private-study/shifts.tsv
+python3 standards/single-cell-isp/isp.py score ../my-private-study/isp-run-01 deletion.tsv --overexpression overexpression.tsv
 ```
 
 The CLI initializes and checks inputs, locks them by SHA-256 and scores an exported shift table. Model inference, reference construction, calibration and experimental validation are upstream tasks. Keep their inputs, adapter code, environment lock, checkpoint hashes, API model identifiers and receipts in the private run package. A lock detects edits relative to its stored hashes. A versioned pre-result commit establishes which design existed at scoring time. Amend via a new version and record results already seen. [Registration](../../templates/preregistration.md) · [Run record](../../templates/methods-record.md)
@@ -29,6 +29,14 @@ The CLI initializes and checks inputs, locks them by SHA-256 and scores an expor
 | No relevant measured positive control | Report an uncalibrated hypothesis-generation screen. Seek context-matched perturbation data before advancing a biological claim. |
 | No supported species/build, compatible gene vocabulary or usable target signal | Mark the affected arm ineligible and give its reason. Removing a model changes the scope of any cross-model claim. |
 | Defined genomic allele, target gene, supported reference genome and relevant molecular track | Add the separate AlphaGenome 2 cis-expression arm below. A count matrix alone supplies no alternate allele. |
+
+## Paired perturbation directions
+
+Register deletion and overexpression together for every new transcriptome ISP. Run the same eligible test cells, target genes, matched control genes, state references and readouts in both directions. Use the same unedited input for both. Record the intervention on each representation, including special tokens, treatment of absent genes, expression ceilings and no-op counts. Include ineligible targets in the coverage ledger. Keep an incomplete arm explicitly unassessed. The genomic allele comparison has its own REF/ALT design.
+
+The current template requires two shift exports. The scorer checks each against the same locked cell, control, model and axis ledger and reports both control-adjusted effects and their within-donor difference. Effects can have the same sign. The paired result provides no automatic significance or symmetry test. Older single-direction registrations remain replayable with their original command and evidence label.
+
+For visualization, compare raw counts, filtered raw counts and filtered normalized counts with a declared sampling seed and common features. Compare pretrained and validation-selected tuned embeddings on identical held-out cells with the same input, mask and pooling. Fit a shared display for each encoder, keep a common color key and report a neighborhood statistic in the original embedding space. Distances across independent UMAP layouts have no shared scale.
 
 ## Before fitting
 

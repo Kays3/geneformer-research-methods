@@ -29,6 +29,23 @@ class Workflow(unittest.TestCase):
             with self.assertRaises(ValueError):
                 score(self.run, self.shifts)
 
+    def test_paired_directions(self):
+        config_path = self.run / 'study.json'
+        cfg = json.loads(config_path.read_text())
+        cfg['paired_directions'] = True
+        config_path.write_text(json.dumps(cfg))
+        (self.run / 'lock.json').write_text(json.dumps(fingerprint(self.run)))
+        with self.assertRaisesRegex(ValueError, 'requires an overexpression'):
+            score(self.run, self.shifts)
+        up = self.run / 'overexpression.tsv'
+        shutil.copyfile(self.shifts, up)
+        result = score(self.run, self.shifts, up)
+        contrast = result['models']['v1']['equal_donor_effects']['deletion_minus_overexpression']
+        self.assertTrue(all(v == 0 for v in contrast.values()))
+        up.write_text('\n'.join(up.read_text().splitlines()[:-1]))
+        with self.assertRaisesRegex(ValueError, 'Incomplete'):
+            score(self.run, self.shifts, up)
+
     def test_split_leakage(self):
         with (self.run / 'donors.tsv').open('a') as f:
             f.write('X\ttrain\n')

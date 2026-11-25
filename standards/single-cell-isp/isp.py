@@ -78,7 +78,7 @@ def fingerprint(folder):
     return {name: digest(folder / name) for name in ["study.json", "cells.tsv", "donors.tsv"]}
 
 
-def score(folder, shifts):
+def score_direction(folder, shifts):
     cfg, cells = inspect(folder)
     if json.loads((folder / "lock.json").read_text()) != fingerprint(folder):
         raise ValueError("Registered inputs have changed")
@@ -121,6 +121,39 @@ def score(folder, shifts):
                 registered_inputs=fingerprint(folder), shifts_sha256=digest(shifts))
 
 
+def score(folder, shifts, overexpression=None):
+    deletion = score_direction(folder, shifts)
+    cfg, cells = inspect(folder)
+    if overexpression is None:
+        if cfg.get("paired_directions") is True:
+            raise ValueError("This registration requires an overexpression export")
+        return deletion
+    if shifts.resolve() == overexpression.resolve():
+        raise ValueError("Supply separate deletion and overexpression exports")
+    increase = score_direction(folder, overexpression)
+    results = {}
+    for model in cfg["models"]:
+        donors = {}
+        for donor, row in deletion["models"][model]["by_donor"].items():
+            down = row["effects"]
+            up = increase["models"][model]["by_donor"][donor]["effects"]
+            donors[donor] = {
+                "cells": row["cells"], "deletion": down, "overexpression": up,
+                "deletion_minus_overexpression": {axis: down[axis]-up[axis] for axis in down},
+            }
+        results[model] = {
+            "by_donor": donors,
+            "equal_donor_effects": {
+                direction: {axis: mean(row[direction][axis] for row in donors.values())
+                            for axis in cfg["axes"]}
+                for direction in ("deletion", "overexpression", "deletion_minus_overexpression")
+            },
+        }
+    return {"study": cfg["study"], "test_cells": len(cells), "models": results,
+            "registered_inputs": fingerprint(folder), "deletion_sha256": digest(shifts),
+            "overexpression_sha256": digest(overexpression)}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -129,6 +162,7 @@ def main():
         sub.add_argument("folder", type=Path)
         if name == "score":
             sub.add_argument("shifts", type=Path)
+            sub.add_argument("--overexpression", type=Path, help="Matched overexpression shift export")
     args = parser.parse_args()
     folder = args.folder
     if args.command == "init":
@@ -137,7 +171,7 @@ def main():
             shutil.copyfile(HERE / "template" / name, folder / name)
         print("Created study inputs at", folder)
     elif args.command == "score":
-        print(json.dumps(score(folder, args.shifts), indent=2, allow_nan=False))
+        print(json.dumps(score(folder, args.shifts, args.overexpression), indent=2, allow_nan=False))
     else:
         cfg, cells = inspect(folder)
         if args.command == "lock":
